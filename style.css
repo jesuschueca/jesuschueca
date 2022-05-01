@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(104, 184, 184);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.raceName{
+    margin-top: 8px;
+    font-size: 3em;
+}
+.raceDate{
+    margin-top: -15px;
+}
+@media only screen and (max-width: 433px) {
+    .raceName{
+        font-size: 2em;
+    }
+    .raceDate{
+        font-size: 1em;
+    }
+  }
+/* html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+} */
+#leaderboard{
+    margin: auto;
+    /* display:inline-block; */
+    justify-items: center;
+    max-width: 600px !important;
+    margin-bottom: 90px;
+}
+#leaderboard>div{
+    /* max-width: 00px; */
+    width: 90%;
+    /* min-width: 200px; */
+
+    /* height: 50px; */
+    background-color: white;
+    margin: 10px auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid ; */
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+.flag{
+    height: 30px;
+}
+#leaderboard>div>div{
+    display: flex;
+    align-items: center;
+}
+#leaderboard>div>div>div:nth-child(1){
+    font-size: 1.5em;
+}
+#leaderboard>div:nth-child(1)>div:nth-child(2){
+font-size: 1.5em;
+}
+#leaderboard>div>div>div:nth-child(2){
+    text-align: left;
+    margin: 10px;
+}
+#leaderboard>div>div>div>div{
+    margin: -8px 0 0 0;
+    font-size:medium;
+    font-weight:600;
+}
+.footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    flex: 1;
+}
+.links:hover{
+    border-top: 5px solid gray;
+}
+
+.active{
+    border-top: 5px solid black;
+}
+.linkImg{
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+}
+#myCanvas, .details{
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    width: 320px;
+    /* padding: 1px; */
+}
+#myCanvas{
+    padding: 10px;
+}
+.detail, .track{
+    margin: auto;
+    min-width: 340px;
+}
+@media only screen and (max-width: 700px) {
+    .detail{
+        margin: 10px auto;
+    }
+  }
+.container1{
+    max-width: 900px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+#time{
+    margin-top: -25px;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+#expected{
+    color:yellowgreen;
+    font-size: 1.5em;
+    padding-left: 100px;
+}
+#thanExpected{
+    color:yellowgreen;
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+.ratio1{
+    /* font-size: 3em; */
+    margin-top: -45px;
+    margin-bottom: 10px;
+}
+.ratio2{
+font-size: 4em;
+/* margin: 0; */
+}
+#distance{
+    position: relative;
+    top: -25px;
+    left: 4px;
+    font-size: 2em !important;
+    /* z-index: -1; */
+}
+#tDistance{
+    position: relative;
+    top: 10px;
+    left: -6px;
+    /* z-index: 1; */
+    font-size: 1.5em !important;
+}
+#button{
+    margin: 10px;
+}
+.hidden{
+    visibility: hidden;
+    margin: -10;
+    height: 0;
+    padding: 0;
+}
+

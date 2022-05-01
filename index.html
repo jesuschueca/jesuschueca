@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // CONFIGURACION DE FIREBASE
+        var firebaseConfig = {
+            apiKey: "AIzaSyCzjGZvXLqTgOYbWcXwEOmMle7VrL1MZTo",
+            authDomain: "rfid-reader-unav.firebaseapp.com",
+            databaseURL: "https://rfid-reader-unav-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "rfid-reader-unav",
+            storageBucket: "rfid-reader-unav.appspot.com",
+            messagingSenderId: "684010082778",
+            appId: "1:684010082778:web:f02157c368ad6699eef0e3"
+        };
+        // INICIALIZACION DE FIREBASE
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <h1 class="raceName">CARRERA DE PRUEBA</h1>
+    <h4 class="raceDate">DOMINGO 1 DE MAYO 2022</h4>
+    <div class="footer">
+        <a href="#" class="links active"><img src="Track dark.png" class="linkImg" alt=""></a>
+        <a href="leaderboard.html" class="links"><img src="Leaderboard light.png" class="linkImg" alt=""></a>
+    </div>
+    <div class="container1">
+        <div class="track">
+            <canvas id="myCanvas" width="300" height="400" style="border:1px solid #d3d3d3;">
+                Este navegador no es compatible con las funcionalidad de esta aplicación (Canvas).
+            </canvas>
+        </div>
+        <div class="detail">
+        <div class="details">
+            <button id="button" onclick="getData()">EMPEZAR SIMULACIÓN</button>
+            <p id="time">Esperando conexión...</p>
+           <p> <span id="expected"></span><span id="thanExpected"></span></p>
+            <p class="ratio1"><span id="distance">...</span><span class="ratio2">/</span><span id="tDistance">...</span></p>
+        </div>
+        </div>
+    </div>
+    <script src="HackTimer.js"></script>
+    <script src="Coordinates.js"></script>
+    <script src="race.js"></script>
+</body>
+</html>
